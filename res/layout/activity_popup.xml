@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_popup_accounts"
+            android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+            android:id="@+id/activity_popup_buttons"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true" >
+
+        <Button
+                android:id="@+id/activity_popup_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
+
+        <Button
+                android:id="@+id/activity_popup_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload" />
+
+    </LinearLayout>
+
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/activity_popup_accounts"
+            android:layout_above="@id/activity_popup_buttons"
+            android:id="@+id/listView" />
+</RelativeLayout>
